@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linus Torvalds - CV</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <header>
+        <img src="IMG/linus.jpg" 
+            alt="Linus Torvalds" 
+            class="profile-pic">
+        <div class="hero-text">
+            <h1>Linus Torvalds</h1>
+            <p class="title">Creador de Linux • Inventor de Git</p>
+            <p class="location">Helsinki, Finlandia • Portland, Oregon</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="card">
+            <p>Ingeniero de software finlandés-estadounidense, creador del kernel Linux y del sistema de control de versiones Git. Apasionado por los sistemas operativos abiertos y la colaboración global. Mi objetivo es seguir impulsando la innovación en software libre y hacer que la tecnología sea accesible para todos.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experiencia</h2>
+        <div class="card">
+            <h3>Principal Kernel Developer &amp; Benevolent Dictator for Life</h3>
+            <p><strong>The Linux Foundation</strong> • 1991 - Presente</p>
+            <p>Desarrollo y mantenimiento del kernel Linux, el sistema operativo más utilizado del mundo.</p>
+            <p>
+                <a href="https://www.linuxfoundation.org/" target="_blank" class="company-link">Ver página oficial →</a>
+            </p>
+            <p class="email-contact">
+                Contacto: 
+                <a href="mailto:torvalds@kernel.org">torvalds@kernel.org</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <!-- Linux -->
+            <a href="https://es.wikipedia.org/wiki/Linux" target="_blank" class="skill-card">
+                <img src="IMG/linux.png" alt="Linux" class="skill-logo">
+                <span>Linux</span>
+            </a>
+            <!-- Git -->
+            <a href="https://es.wikipedia.org/wiki/Git" target="_blank" class="skill-card">
+                <img src="IMG/git.png" alt="Git" class="skill-logo">
+                <span>Git</span>
+            </a>
+            <!-- C -->
+            <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank" class="skill-card">
+                <img src="IMG/c.png" alt="C" class="skill-logo">
+                <span>C</span>
+         </a>
+</div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+        <div id="success">✅ ¡Mensaje enviado con éxito! (simulado)</div>
+    </section>
+
+    <button id="back-to-top" class="back-btn" title="Volver al inicio">↑</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
